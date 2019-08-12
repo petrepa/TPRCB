@@ -9,10 +9,10 @@ Therefore I made a box that counts the number of toilet paper rolls, which also 
 ![box](https://github.com/petrepa/TPRCB/blob/master/Photos/box.jpeg)
 
 If we have less than 4 rolls, we get a subtle warning from the box
-![warning]()
+![warning](https://github.com/petrepa/TPRCB/blob/master/Photos/warning.gif)
 
 And if we have less than 2(!) rolls left, the box goes into EMERGENCY mode🚨🚨🚨
-![emergency]()
+![emergency](https://github.com/petrepa/TPRCB/blob/master/Photos/emergency.gif)
 
 
 ## Build
