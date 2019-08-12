@@ -6,7 +6,7 @@ As I was sitting on the toilet the other day, I discovered we had no toilet pape
 
 Therefore I made a box that counts the number of toilet paper rolls, which also warns me if we're running low. Everything done with the help from [Home Assistant](https://www.home-assistant.io/) and [ESPHome](https://esphome.io/) 🎉🤩
 
-![box]()
+![box](https://github.com/petrepa/TPRCB/blob/master/Photos/box.jpeg)
 
 If we have less than 4 rolls, we get a subtle warning from the box
 ![warning]()
