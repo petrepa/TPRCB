@@ -11,7 +11,7 @@ Therefore I made a box that counts the number of toilet paper rolls, which also 
 If we have less than 4 rolls, we get a subtle warning from the box
 ![warning]()
 
-And if we have less than 2(!) roll left, the box goes into EMERGENCY mode🚨🚨🚨
+And if we have less than 2(!) rolls left, the box goes into EMERGENCY mode🚨🚨🚨
 ![emergency]()
 
 
@@ -27,33 +27,30 @@ Built this using:
 
 ### Build process
 The new box:
-![box_new]()
+![box_new](https://github.com/petrepa/TPRCB/blob/master/Photos/box_new.jpg)
 
 Cutting of Gilde for the plate inside the box:
-![gilde_cutting]()
+![gilde_cutting](https://github.com/petrepa/TPRCB/blob/master/Photos/gilde_cutting.jpg)
 
 Checked that the plate fits in the box:
-![fits]()
+![fits](https://github.com/petrepa/TPRCB/blob/master/Photos/fits.jpg)
 
 The hole for the barrel plug:
-![barrel_hole]()
+![barrel_hole](https://github.com/petrepa/TPRCB/blob/master/Photos/barrel_hole.jpg)
 
 Didn't have a drill that fit the barrel plug, so decided to make a bigger hole, and then 3D-print an adapter for the plug:
-![adapter]()
-
-The hole for the barrel plug:
-![finised]()
+![adapter](https://github.com/petrepa/TPRCB/blob/master/Photos/adapter.jpg)
 
 Mounted the load cell to the plate, and another plate as the bottom:
-![load_cell]()
-![weight_plate]()
+![load_cell](https://github.com/petrepa/TPRCB/blob/master/Photos/load_cell.jpg)
+![weight_plate](https://github.com/petrepa/TPRCB/blob/master/Photos/weight_plate.jpg)
 
 Placement of the LED Strip:
-![led_strip]()
+![led_strip](https://github.com/petrepa/TPRCB/blob/master/Photos/led_strip.jpg)
 
 ## Schematics
 ![finised]()
 
 ## Code
 The code is made in ESPHome, a super easy way to make code for sensor and other stuff for Home assistant
-[Here]() it is!
+[Here](https://github.com/petrepa/TPRCB/blob/master/toilet_paper.yaml) it is!
