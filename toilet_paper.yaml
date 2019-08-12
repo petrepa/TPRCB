@@ -1,0 +1,89 @@
+esphome:
+  name: toilet_paper
+  platform: ESP8266
+  board: nodemcu
+
+wifi:
+  ssid: "ur_wifi"
+  password: "ur_pw"
+  manual_ip:
+    static_ip: ur_ip
+    gateway: 192.168.1.1
+    subnet: 255.255.255.0
+
+logger:
+
+api:
+
+ota:
+
+
+switch:
+  - platform: restart
+    name: "Toilet Paper Restart"
+
+sensor:
+  - platform: wifi_signal
+    name: Toilet Paper WiFi Signal
+    update_interval: 10s
+  - platform: uptime
+    name: Toilet Paper Uptime
+  - platform: hx711
+    name: "toilet_paper_weight"
+    id: water_bottles_weight
+    dout_pin: D2
+    clk_pin: D1
+    gain: 128
+    update_interval: 20s
+    filters:
+      - calibrate_linear:
+        - -27502 -> 0 #the value reported when nothing is in the box
+        - 14712 -> 87 #the value reported with one toilet paper roll in the box
+        - 4323 -> 162 #other values below
+        - 78316 -> 472
+        - 161010 -> 962
+      - lambda: if (x < 0.1) return 0.0; else return x;
+    unit_of_measurement: g
+
+  - platform: template
+    name: "toilet_paper_count"
+    lambda: |-
+      return floor(id(water_bottles_weight).state / 87); #weight devided by the weight of one roll to find the number of rolls
+    update_interval: 20s
+    
+light:
+  - platform: fastled_clockless
+    chipset: WS2812
+    pin: D5
+    num_leds: 24
+    rgb_order: BRG
+    name: "Bathroom Toilet Paper WS2812 Light"
+    effects:
+      - addressable_rainbow:
+      - addressable_color_wipe:
+      - strobe:
+      - strobe:
+          name: Strobe Warning
+          colors:
+            - state: True
+              brightness: 100%
+              red: 100%
+              green: 0%
+              blue: 0%
+              duration: 500ms
+            - state: False
+              duration: 250ms
+            - state: True
+              brightness: 100%
+              red: 100%
+              green: 100%
+              blue: 0%
+              duration: 500ms
+            - state: False
+              duration: 250ms
+      - flicker:
+      - addressable_scan:
+      - addressable_twinkle:
+      - addressable_random_twinkle:
+      - addressable_flicker:
+      - addressable_fireworks:
