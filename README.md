@@ -52,5 +52,6 @@ Placement of the LED Strip:
 ![finised]()
 
 ## Code
-The code is made in ESPHome, a super easy way to make code for sensor and other stuff for Home assistant
+The code is made in ESPHome, a super easy way to make code for sensor and other stuff for Home assistant.
+
 [Here](https://github.com/petrepa/TPRCB/blob/master/toilet_paper.yaml) it is!
