@@ -19,7 +19,7 @@ And if we have less than 2(!) rolls left, the box goes into EMERGENCY modeðŸš¨ðŸ
 Built this using:
 * [NodeMCU](http://www.nodemcu.com/index_en.html) V3
 * HX711 and a load cell
-* Gilde Box
+* Gilde Box (any see through plate would suffice)
 * [Clas Ohlson Wooden Box](https://www.clasohlson.com/no/Trekasse-med-h%C3%A5ndtak/Pr441449000)
 * 12V PSU
 * Barrel Socket
