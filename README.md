@@ -48,8 +48,6 @@ Mounted the load cell to the plate, and another plate as the bottom:
 Placement of the LED Strip:
 ![led_strip](https://github.com/petrepa/TPRCB/blob/master/Photos/led_strip.jpg)
 
-## Schematics
-![finised]()
 
 ## Code
 The code is made in ESPHome, a super easy way to make code for sensor and other stuff for Home assistant.
